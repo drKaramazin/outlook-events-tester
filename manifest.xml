@@ -43,12 +43,8 @@
       <Hosts>
         <Host xsi:type="MailHost">
 
-          <!-- Event-based activation happens in a lightweight runtime.-->
           <Runtimes>
-            <!-- HTML file including reference to or inline JavaScript event handlers.
-                 This is used by Outlook on the web and Outlook on the new Mac UI. -->
             <Runtime resid="WebViewRuntime.Url">
-              <!-- JavaScript file containing event handlers. This is used by Outlook Desktop. -->
               <Override type="javascript" resid="JSRuntime.Url"/>
             </Runtime>
           </Runtimes>
@@ -80,17 +76,15 @@
               </OfficeTab>
             </ExtensionPoint>
 
-            <ExtensionPoint xsi:type="Events">
-              <Event Type="ItemSend" FunctionExecution="synchronous" FunctionName="itemSent" />
-            </ExtensionPoint>
+<!--            <ExtensionPoint xsi:type="Events">-->
+<!--              <Event Type="ItemSend" FunctionExecution="synchronous" FunctionName="itemSent" />-->
+<!--            </ExtensionPoint>-->
 
-            <!-- Enable launching the add-in on the included events. -->
             <ExtensionPoint xsi:type="LaunchEvent">
               <LaunchEvents>
                 <LaunchEvent Type="OnNewMessageCompose" FunctionName="onMessageComposeHandler"/>
                 <LaunchEvent Type="OnNewAppointmentOrganizer" FunctionName="onAppointmentComposeHandler"/>
 
-                <!-- Other available events (currently released) -->
                 <LaunchEvent Type="OnMessageAttachmentsChanged" FunctionName="onMessageAttachmentsChangedHandler" />
                 <LaunchEvent Type="OnAppointmentAttachmentsChanged" FunctionName="onAppointmentAttachmentsChangedHandler" />
                 <LaunchEvent Type="OnMessageRecipientsChanged" FunctionName="onMessageRecipientsChangedHandler" />
@@ -99,13 +93,11 @@
                 <LaunchEvent Type="OnAppointmentRecurrenceChanged" FunctionName="onAppointmentRecurrenceChangedHandler" />
                 <LaunchEvent Type="OnInfoBarDismissClicked" FunctionName="onInfobarDismissClickedHandler" />
 
-                <!-- Other available events (currently in preview) -->
                 <!--
                 <LaunchEvent Type="OnMessageSend" FunctionName="onMessageSendHandler" SendMode="PromptUser" />
                 <LaunchEvent Type="OnAppointmentSend" FunctionName="onAppointmentSendHandler" SendMode="PromptUser" />
                 -->
               </LaunchEvents>
-              <!-- Identifies the runtime to be used (also referenced by the Runtime element). -->
               <SourceLocation resid="WebViewRuntime.Url"/>
             </ExtensionPoint>
 
