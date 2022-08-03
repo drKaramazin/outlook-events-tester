@@ -20,6 +20,7 @@ module.exports = async (env, options) => {
       polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
       commands: "./src/commands/commands.js",
       dialog: "./src/dialog/dialog.js",
+      launchevent: "./src/launchevent/launchevent.js",
     },
     output: {
       devtoolModuleFilenameTemplate: "webpack:///[resource-path]?[loaders]",
@@ -78,6 +79,11 @@ module.exports = async (env, options) => {
         filename: "commands.html",
         template: "./src/commands/commands.html",
         chunks: ["polyfill", "commands"],
+      }),
+      new HtmlWebpackPlugin({
+        filename: "launchevent.html",
+        template: "./src/launchevent/launchevent.html",
+        chunks: ["polyfill", "launchevent"],
       }),
       new HtmlWebpackPlugin({
         filename: "dialog.html",

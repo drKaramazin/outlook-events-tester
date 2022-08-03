@@ -76,30 +76,30 @@
               </OfficeTab>
             </ExtensionPoint>
 
-<!--            <ExtensionPoint xsi:type="Events">-->
-<!--              <Event Type="ItemSend" FunctionExecution="synchronous" FunctionName="itemSent" />-->
-<!--            </ExtensionPoint>-->
-
-            <ExtensionPoint xsi:type="LaunchEvent">
-              <LaunchEvents>
-                <LaunchEvent Type="OnNewMessageCompose" FunctionName="onMessageComposeHandler"/>
-                <LaunchEvent Type="OnNewAppointmentOrganizer" FunctionName="onAppointmentComposeHandler"/>
-
-                <LaunchEvent Type="OnMessageAttachmentsChanged" FunctionName="onMessageAttachmentsChangedHandler" />
-                <LaunchEvent Type="OnAppointmentAttachmentsChanged" FunctionName="onAppointmentAttachmentsChangedHandler" />
-                <LaunchEvent Type="OnMessageRecipientsChanged" FunctionName="onMessageRecipientsChangedHandler" />
-                <LaunchEvent Type="OnAppointmentAttendeesChanged" FunctionName="onAppointmentAttendeesChangedHandler" />
-                <LaunchEvent Type="OnAppointmentTimeChanged" FunctionName="onAppointmentTimeChangedHandler" />
-                <LaunchEvent Type="OnAppointmentRecurrenceChanged" FunctionName="onAppointmentRecurrenceChangedHandler" />
-                <LaunchEvent Type="OnInfoBarDismissClicked" FunctionName="onInfobarDismissClickedHandler" />
-
-                <!--
-                <LaunchEvent Type="OnMessageSend" FunctionName="onMessageSendHandler" SendMode="PromptUser" />
-                <LaunchEvent Type="OnAppointmentSend" FunctionName="onAppointmentSendHandler" SendMode="PromptUser" />
-                -->
-              </LaunchEvents>
-              <SourceLocation resid="WebViewRuntime.Url"/>
+            <ExtensionPoint xsi:type="Events">
+              <Event Type="ItemSend" FunctionExecution="synchronous" FunctionName="itemSent" />
             </ExtensionPoint>
+
+<!--            <ExtensionPoint xsi:type="LaunchEvent">-->
+<!--              <LaunchEvents>-->
+<!--                <LaunchEvent Type="OnNewMessageCompose" FunctionName="onMessageComposeHandler"/>-->
+<!--                <LaunchEvent Type="OnNewAppointmentOrganizer" FunctionName="onAppointmentComposeHandler"/>-->
+
+<!--                <LaunchEvent Type="OnMessageAttachmentsChanged" FunctionName="onMessageAttachmentsChangedHandler" />-->
+<!--                <LaunchEvent Type="OnAppointmentAttachmentsChanged" FunctionName="onAppointmentAttachmentsChangedHandler" />-->
+<!--                <LaunchEvent Type="OnMessageRecipientsChanged" FunctionName="onMessageRecipientsChangedHandler" />-->
+<!--                <LaunchEvent Type="OnAppointmentAttendeesChanged" FunctionName="onAppointmentAttendeesChangedHandler" />-->
+<!--                <LaunchEvent Type="OnAppointmentTimeChanged" FunctionName="onAppointmentTimeChangedHandler" />-->
+<!--                <LaunchEvent Type="OnAppointmentRecurrenceChanged" FunctionName="onAppointmentRecurrenceChangedHandler" />-->
+<!--                <LaunchEvent Type="OnInfoBarDismissClicked" FunctionName="onInfobarDismissClickedHandler" />-->
+
+<!--                &lt;!&ndash;-->
+<!--                <LaunchEvent Type="OnMessageSend" FunctionName="onMessageSendHandler" SendMode="PromptUser" />-->
+<!--                <LaunchEvent Type="OnAppointmentSend" FunctionName="onAppointmentSendHandler" SendMode="PromptUser" />-->
+<!--                &ndash;&gt;-->
+<!--              </LaunchEvents>-->
+<!--              <SourceLocation resid="WebViewRuntime.Url"/>-->
+<!--            </ExtensionPoint>-->
 
           </DesktopFormFactor>
         </Host>
@@ -112,7 +112,7 @@
         </bt:Images>
         <bt:Urls>
           <bt:Url id="Commands.Url" DefaultValue="https://localhost:3000/commands.html"/>
-          <bt:Url id="WebViewRuntime.Url" DefaultValue="https://localhost:3000/commands.html" />
+          <bt:Url id="WebViewRuntime.Url" DefaultValue="https://localhost:3000/launchevent.html" />
           <bt:Url id="JSRuntime.Url" DefaultValue="https://localhost:3000/launchevent.js" />
         </bt:Urls>
         <bt:ShortStrings>

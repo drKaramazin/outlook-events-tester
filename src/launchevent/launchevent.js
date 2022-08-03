@@ -54,14 +54,16 @@ function onInfobarDismissClickedHandler(event) {
   holder(event, "onInfobarDismissClickedHandler");
 }
 
-// 1st parameter: FunctionName of LaunchEvent in the manifest; 2nd parameter: Its implementation in this .js file.
-Office.actions.associate("onMessageComposeHandler", onMessageComposeHandler);
-Office.actions.associate("onAppointmentComposeHandler", onAppointmentComposeHandler);
+Office.onReady(() => {
+  // 1st parameter: FunctionName of LaunchEvent in the manifest; 2nd parameter: Its implementation in this .js file.
+  Office.actions.associate("onMessageComposeHandler", onMessageComposeHandler);
+  Office.actions.associate("onAppointmentComposeHandler", onAppointmentComposeHandler);
 
-Office.actions.associate("onMessageAttachmentsChangedHandler", onMessageAttachmentsChangedHandler);
-Office.actions.associate("onAppointmentAttachmentsChangedHandler", onAppointmentAttachmentsChangedHandler);
-Office.actions.associate("onMessageRecipientsChangedHandler", onMessageRecipientsChangedHandler);
-Office.actions.associate("onAppointmentAttendeesChangedHandler", onAppointmentAttendeesChangedHandler);
-Office.actions.associate("onAppointmentTimeChangedHandler", onAppointmentTimeChangedHandler);
-Office.actions.associate("onAppointmentRecurrenceChangedHandler", onAppointmentRecurrenceChangedHandler);
-Office.actions.associate("onInfobarDismissClickedHandler", onInfobarDismissClickedHandler);
+  Office.actions.associate("onMessageAttachmentsChangedHandler", onMessageAttachmentsChangedHandler);
+  Office.actions.associate("onAppointmentAttachmentsChangedHandler", onAppointmentAttachmentsChangedHandler);
+  Office.actions.associate("onMessageRecipientsChangedHandler", onMessageRecipientsChangedHandler);
+  Office.actions.associate("onAppointmentAttendeesChangedHandler", onAppointmentAttendeesChangedHandler);
+  Office.actions.associate("onAppointmentTimeChangedHandler", onAppointmentTimeChangedHandler);
+  Office.actions.associate("onAppointmentRecurrenceChangedHandler", onAppointmentRecurrenceChangedHandler);
+  Office.actions.associate("onInfobarDismissClickedHandler", onInfobarDismissClickedHandler);
+});
