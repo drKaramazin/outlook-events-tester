@@ -12,7 +12,7 @@ function displayDialogAsync(dialogUrl, dialogOptions) {
 }
 
 function holder(event, message) {
-  displayDialogAsync("/dialog.html", {
+  displayDialogAsync(window.location.origin + "/dialog.html", {
     width: 30,
     height: 20,
   });

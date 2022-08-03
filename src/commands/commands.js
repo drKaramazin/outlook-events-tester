@@ -41,7 +41,7 @@ function action(event) {
   // Show a notification message
   // Office.context.mailbox.item.notificationMessages.replaceAsync("action", message);
 
-  displayDialogAsync("/dialog.html", {
+  displayDialogAsync(window.location.origin + "/dialog.html", {
     width: 30,
     height: 20,
   }).then(() => {
@@ -53,7 +53,7 @@ function action(event) {
 }
 
 function itemSentHolder(event) {
-  displayDialogAsync("/dialog.html", {
+  displayDialogAsync(window.location.origin + "/dialog.html", {
     width: 30,
     height: 20,
   }).then(() => {
