@@ -19,6 +19,7 @@ module.exports = async (env, options) => {
     entry: {
       polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
       commands: "./src/commands/commands.js",
+      "commands.prod": "./src/commands/commands.prod.js",
       dialog: "./src/dialog/dialog.js",
       launchevent: "./src/launchevent/launchevent.js",
     },
@@ -78,7 +79,7 @@ module.exports = async (env, options) => {
       new HtmlWebpackPlugin({
         filename: "commands.html",
         template: "./src/commands/commands.html",
-        chunks: ["polyfill", "commands"],
+        chunks: dev ? ["polyfill", "commands"] : ["polyfill", "commands.prod"],
       }),
       new HtmlWebpackPlugin({
         filename: "launchevent.html",
