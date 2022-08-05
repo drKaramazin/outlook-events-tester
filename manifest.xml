@@ -43,11 +43,11 @@
       <Hosts>
         <Host xsi:type="MailHost">
 
-          <Runtimes>
-            <Runtime resid="WebViewRuntime.Url">
-              <Override type="javascript" resid="JSRuntime.Url"/>
-            </Runtime>
-          </Runtimes>
+<!--          <Runtimes>-->
+<!--            <Runtime resid="WebViewRuntime.Url">-->
+<!--              <Override type="javascript" resid="JSRuntime.Url"/>-->
+<!--            </Runtime>-->
+<!--          </Runtimes>-->
 
           <DesktopFormFactor>
 
@@ -93,10 +93,10 @@
 <!--                <LaunchEvent Type="OnAppointmentRecurrenceChanged" FunctionName="onAppointmentRecurrenceChangedHandler" />-->
 <!--                <LaunchEvent Type="OnInfoBarDismissClicked" FunctionName="onInfobarDismissClickedHandler" />-->
 
-<!--                &lt;!&ndash;-->
-<!--                <LaunchEvent Type="OnMessageSend" FunctionName="onMessageSendHandler" SendMode="PromptUser" />-->
-<!--                <LaunchEvent Type="OnAppointmentSend" FunctionName="onAppointmentSendHandler" SendMode="PromptUser" />-->
-<!--                &ndash;&gt;-->
+                <!--
+                <LaunchEvent Type="OnMessageSend" FunctionName="onMessageSendHandler" SendMode="PromptUser" />
+                <LaunchEvent Type="OnAppointmentSend" FunctionName="onAppointmentSendHandler" SendMode="PromptUser" />
+                -->
 <!--              </LaunchEvents>-->
 <!--              <SourceLocation resid="WebViewRuntime.Url"/>-->
 <!--            </ExtensionPoint>-->
