@@ -6,8 +6,8 @@
     <DefaultLocale>en-US</DefaultLocale>
     <DisplayName DefaultValue="outlook-events-tester"/>
     <Description DefaultValue="A template to get started."/>
-    <IconUrl DefaultValue="https://dev-stand-07.hi-tech.org/v2/assets/outlook-events-tester/dist/assets/icon-64.png"/>
-    <HighResolutionIconUrl DefaultValue="https://dev-stand-07.hi-tech.org/v2/assets/outlook-events-tester/dist/assets/icon-128.png"/>
+    <IconUrl DefaultValue="https://dev-stand-07.hi-tech.org/outlook-plugin/assets/outlook-events-tester/dist/assets/icon-64.png"/>
+    <HighResolutionIconUrl DefaultValue="https://dev-stand-07.hi-tech.org/outlook-plugin/assets/outlook-events-tester/dist/assets/icon-128.png"/>
     <SupportUrl DefaultValue="https://dev-stand-07.hi-tech.org"/>
     <AppDomains>
         <AppDomain>https://dev-stand-07.hi-tech.org</AppDomain>
@@ -23,7 +23,7 @@
     <FormSettings>
         <Form xsi:type="ItemRead">
             <DesktopSettings>
-                <SourceLocation DefaultValue="https://dev-stand-07.hi-tech.org/v2/assets/outlook-events-tester/dist/taskpane.html"/>
+                <SourceLocation DefaultValue="https://dev-stand-07.hi-tech.org/outlook-plugin/assets/outlook-events-tester/dist/taskpane.html"/>
                 <RequestedHeight>250</RequestedHeight>
             </DesktopSettings>
         </Form>
@@ -106,14 +106,14 @@
             </Hosts>
             <Resources>
                 <bt:Images>
-                    <bt:Image id="Icon.16x16" DefaultValue="https://dev-stand-07.hi-tech.org/v2/assets/outlook-events-tester/dist/assets/icon-16.png"/>
-                    <bt:Image id="Icon.32x32" DefaultValue="https://dev-stand-07.hi-tech.org/v2/assets/outlook-events-tester/dist/assets/icon-32.png"/>
-                    <bt:Image id="Icon.80x80" DefaultValue="https://dev-stand-07.hi-tech.org/v2/assets/outlook-events-tester/dist/assets/icon-80.png"/>
+                    <bt:Image id="Icon.16x16" DefaultValue="https://dev-stand-07.hi-tech.org/outlook-plugin/assets/outlook-events-tester/dist/assets/icon-16.png"/>
+                    <bt:Image id="Icon.32x32" DefaultValue="https://dev-stand-07.hi-tech.org/outlook-plugin/assets/outlook-events-tester/dist/assets/icon-32.png"/>
+                    <bt:Image id="Icon.80x80" DefaultValue="https://dev-stand-07.hi-tech.org/outlook-plugin/assets/outlook-events-tester/dist/assets/icon-80.png"/>
                 </bt:Images>
                 <bt:Urls>
-                    <bt:Url id="Commands.Url" DefaultValue="https://dev-stand-07.hi-tech.org/v2/assets/outlook-events-tester/dist/commands.html"/>
-                    <bt:Url id="WebViewRuntime.Url" DefaultValue="https://dev-stand-07.hi-tech.org/v2/assets/outlook-events-tester/dist/launchevent.html" />
-                    <bt:Url id="JSRuntime.Url" DefaultValue="https://dev-stand-07.hi-tech.org/v2/assets/outlook-events-tester/dist/launchevent.js" />
+                    <bt:Url id="Commands.Url" DefaultValue="https://dev-stand-07.hi-tech.org/outlook-plugin/assets/outlook-events-tester/dist/commands.html"/>
+                    <bt:Url id="WebViewRuntime.Url" DefaultValue="https://dev-stand-07.hi-tech.org/outlook-plugin/assets/outlook-events-tester/dist/launchevent.html" />
+                    <bt:Url id="JSRuntime.Url" DefaultValue="https://dev-stand-07.hi-tech.org/outlook-plugin/assets/outlook-events-tester/dist/launchevent.js" />
                 </bt:Urls>
                 <bt:ShortStrings>
                     <bt:String id="GroupLabel" DefaultValue="Contoso Add-in"/>
